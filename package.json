@@ -1,0 +1,12 @@
+{
+  "name": "production_study",
+  "version": "1.0.0",
+  "description": "배포 연습",
+  "main": "index.js",
+  "repository": "https://github.com/vivapyk/production_stduy.git",
+  "author": "Young_home <vivapyk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
+}
