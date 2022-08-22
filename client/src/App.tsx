@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [text, setText] = useState('home')
 
   const onButtonClick = async () => {
-    const data = await fetch(' http://localhost:8000/intro')
-    console.log('hi')
+    const res = await fetch(' http://localhost:8000/intro')
+    const data = await res.json()
+    setText(data.intro)
   }
 
   return (
@@ -14,7 +16,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          {text}
         </p>
         <div>
           <button className="hoverButton" onClick={onButtonClick}>
