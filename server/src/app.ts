@@ -12,6 +12,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.get('/intro', (req: Request, res: Response) => {
+    console.log('hi')
     res.send('introduction')
 });
 
