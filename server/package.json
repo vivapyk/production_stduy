@@ -21,7 +21,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "eslint": "^8.20.0"
+    "eslint": "^8.20.0",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.7"
   },
   "scripts": {
     "start": "tsc -p . && node dist/src/app.js",
