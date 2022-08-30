@@ -1,6 +1,6 @@
 import { AppDataSource } from "./data-source"
 import { User } from "./entity/User"
-
+console.log('hi')
 AppDataSource.initialize().then(async () => {
 
     console.log("Inserting a new user into the database...")

@@ -1,17 +1,17 @@
 {
-   "name": "MySql",
+   "name": "mysqlDB",
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "devDependencies": {
-      "@types/node": "^16.11.10",
       "ts-node": "10.7.0",
+      "@types/node": "^16.11.10",
       "typescript": "4.5.2"
    },
    "dependencies": {
-      "mysql2": "^2.3.3",
+      "typeorm": "0.3.7",
       "reflect-metadata": "^0.1.13",
-      "typeorm": "0.3.7"
+      "mysql": "^2.14.1"
    },
    "scripts": {
       "start": "ts-node src/index.ts",
